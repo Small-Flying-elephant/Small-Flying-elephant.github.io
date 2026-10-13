@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 - 金属探测器 (Metal Detector)</title>
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --text-main: #202124;
+            --text-secondary: #5f6368;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #dadce0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 1px solid var(--border-color);
+        }
+        h1 {
+            color: var(--primary-color);
+            font-size: 28px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+        }
+        h2 {
+            color: var(--text-main);
+            font-size: 20px;
+            margin-top: 35px;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 12px;
+        }
+        h3 {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+        p, li {
+            color: #3c4043;
+            font-size: 15px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .meta-info {
+            background: #f1f3f4;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        .meta-info strong {
+            color: var(--text-main);
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid var(--border-color);
+            margin: 30px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--text-secondary);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>隐私政策 (Privacy Policy)</h1>
+
+        <div class="meta-info">
+            <p><strong>应用名称</strong>：金属探测器 (Metal Detector)</p>
+            <p><strong>应用包名</strong>：<code>com.lazycat.metaldetector</code></p>
+            <p><strong>生效日期</strong>：2026年10月14日</p>
+        </div>
+
+        <p>欢迎您使用<strong>金属探测器</strong>（以下简称“我们”）。我们深知个人信息对您的重要性，并严格遵守 Google Play 开发者政策及相关法律法规。本隐私政策旨在向您透明、清晰地说明我们在您使用本应用时如何收集、使用、存储及保护您的信息。</p>
+
+        <h2>1. 我们收集的信息及使用方式</h2>
+        <p>本应用严格遵循<strong>“最小必要”</strong>原则，所有数据处理均以提供核心探测与指南针功能为目的：</p>
+        <ul>
+            <li><strong>设备传感器数据（磁力计与加速度计）</strong>：
+                <ul>
+                    <li><strong>收集内容</strong>：实时磁场强度（μT）与设备姿态角度。</li>
+                    <li><strong>用途</strong>：用于计算周围磁场波动、驱动波形图渲染以及提供指南针方位显示。</li>
+                    <li><strong>隐私保障</strong>：所有传感器数据仅在您的设备本地内存中进行实时计算与展现，<strong>绝不会</strong>上传至任何云端服务器、开发者后台或第三方，亦不会被长期持久化存储。</li>
+                </ul>
+            </li>
+            <li><strong>本地存储数据（SharedPreferences）</strong>：
+                <ul>
+                    <li><strong>收集内容</strong>：应用偏好设置（报警阈值、基准值、声音/震动开关）以及您主动添加的<strong>检测历史记录与自定义备注说明</strong>。</li>
+                    <li><strong>隐私保障</strong>：所有历史记录与配置均加密/存储在您的本地设备沙盒中。您可以随时在应用内一键清除全部历史记录。</li>
+                </ul>
+            </li>
+            <li><strong>第三方广告与合规数据（Google AdMob SDK & UMP）</strong>：
+                <ul>
+                    <li><strong>用途</strong>：本应用集成了 Google AdMob 广告 SDK，用于展示开屏等广告以维持应用研发与日常运营。</li>
+                    <li><strong>收集内容</strong>：Google AdMob 可能会自动收集设备标识符（如 Advertising ID）、IP 地址及基本诊断信息，用于展示个性化或非个性化广告。</li>
+                    <li><strong>隐私合规</strong>：对于欧盟及受 GDPR（通用数据保护条例）影响地区的玩家，我们在首次启动时会通过 Google UMP (User Messaging Platform) 弹窗征求您的明确广告隐私授权。详情请查阅 <a href="https://policies.google.com/privacy" target="_blank">Google 隐私权政策</a>。</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>2. 信息共享与披露</h2>
+        <p>除 Google AdMob 广告 SDK 依法进行的常规广告数据交互外，我们<strong>不会</strong>向任何其他第三方出售、交易、转让或共享您的任何个人身份信息或传感器数据。</p>
+
+        <h2>3. 数据安全保护</h2>
+        <p>我们采用符合行业标准的合理安全技术与管理规范，保护您的本地存储数据免受未经授权的访问、公开披露、使用、修改或损坏。</p>
+
+        <h2>4. 儿童隐私保护</h2>
+        <p>本应用不面向 13 岁（或当地法律规定的同等年龄）以下的儿童专门收集任何个人信息。如果我们发现无意中收集了儿童的个人信息，将立即采取措施予以删除。</p>
+
+        <h2>5. 用户权利与数据控制</h2>
+        <p>您对您的个人数据拥有完全的控制权：</p>
+        <ul>
+            <li><strong>数据访问与修改</strong>：您可以在应用内的设置页面自主修改配置，或在历史记录中随时编辑/删除您的探测备注。</li>
+            <li><strong>数据删除</strong>：卸载本应用或通过应用内的“清除历史记录”功能，即可彻底清空本地存储的所有历史数据与偏好设置。</li>
+        </ul>
+
+        <h2>6. 隐私政策的更新</h2>
+        <p>我们可能会适时对本隐私政策进行修订。重大变更将在应用更新说明或发布页面中进行通知。请您定期查阅本政策以了解最新动态。</p>
+
+        <h2>7. 联系我们</h2>
+        <p>如果您对本隐私政策有任何疑问、异议、投诉或建议，请通过以下开发者电子邮箱与我们联系：</p>
+        <p><strong>开发者邮箱</strong>：<code>support@lazycat.com</code></p>
+    </div>
+    <footer>
+        &copy; 2026 Metal Detector App. All Rights Reserved.
+    </footer>
+</body>
+</html>
