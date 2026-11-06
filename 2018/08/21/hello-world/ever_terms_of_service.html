@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EverEver - Terms of Service</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent-color: #3b82f6;
+            --warning-color: #f59e0b;
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            margin: 0;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 28px;
+            margin-bottom: 8px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 12px;
+        }
+
+        .meta-info {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 20px;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 18px;
+            background-color: var(--accent-color);
+            margin-right: 10px;
+            border-radius: 2px;
+        }
+
+        p, li {
+            font-size: 15px;
+            color: var(--text-main);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .alert-box {
+            background-color: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid var(--warning-color);
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .alert-box strong {
+            color: var(--warning-color);
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 13px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 16px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>EverEver - Terms of Service</h1>
+    <div class="meta-info">
+        <p><strong>Effective Date:</strong> November 6, 2026 | <strong>Last Updated:</strong> November 6, 2026</p>
+        <p><strong>Developer / Operator:</strong> EverEver Team (LazyCat / Small Flying Elephant)</p>
+    </div>
+
+    <p>Welcome to EverEver! These Terms of Service ("Terms") constitute a legal agreement between you ("User") and the EverEver Team ("we") regarding your download, installation, and use of the EverEver Application. By installing or using this Application, you acknowledge that you have read, understood, and agreed to be bound by these Terms.</p>
+
+    <h2>1. Description of Services</h2>
+    <p>EverEver is a personal safety assistance tool designed to help users manage personal safety awareness. Its core features include:</p>
+    <ul>
+        <li><strong>Daily Safety Check-In:</strong> Users confirm their safety by checking in daily. If a user fails to check in beyond a configured timeout period, the App issues local notification alerts.</li>
+        <li><strong>One-Tap Emergency SOS:</strong> Triggering an SOS countdown initiates automated emergency email alerts (via user-configured SMTP settings) or phone calls to designated contacts.</li>
+        <li><strong>Emergency Location Helper:</strong> Attaching real-time device location map links to emergency emails to assist emergency contacts in locating the user.</li>
+    </ul>
+
+    <h2>2. Important Disclaimers & Limitations of Liability (CRITICAL)</h2>
+
+    <div class="alert-box">
+        <strong>Not a Substitute for Official Emergency Services:</strong><br>
+        EverEver is an auxiliary personal safety assistance tool and is <strong>NOT</strong> a replacement for official public emergency call centers or first responders (such as 911, 112, 999, 110, or emergency ambulance services). This Application cannot directly connect to government emergency dispatch services.
+    </div>
+
+    <div class="alert-box">
+        <strong>Service Reliability Disclaimer:</strong><br>
+        The delivery of emergency emails and phone calls depends on multiple external factors beyond our control, including but not limited to:
+        <ul>
+            <li>Active device network connection (Cellular Data / Wi-Fi);</li>
+            <li>Proper configuration and availability of third-party SMTP servers (e.g., Gmail, Outlook, QQ Mail, 163 Mail) and valid app passwords;</li>
+            <li>Device battery power, GPS satellite signal visibility, and carrier cellular coverage;</li>
+            <li>Device operating system (Android) background process limits, battery saver modes, or doze state restrictions.</li>
+        </ul>
+        To the maximum extent permitted by applicable law, we disclaim all liability for any failure, delay, or non-delivery of emergency notifications resulting from network outages, email server errors, system restrictions, or user configuration mistakes.
+    </div>
+
+    <h2>3. User Obligations & Conduct</h2>
+    <ul>
+        <li><strong>Accuracy of Information:</strong> You agree to provide true, accurate, and valid personal information and emergency contact details, and warrant that you have obtained consent from your emergency contacts.</li>
+        <li><strong>SMTP Account Security:</strong> Outgoing email settings and credentials configured by you are stored strictly locally on your device. You are solely responsible for maintaining the confidentiality of your email authorization codes/passwords.</li>
+        <li><strong>Prohibition of Misuse:</strong> You agree not to use this Application for any unlawful activities, including transmitting false emergency alerts, harassment, or abusing the SOS functionality.</li>
+    </ul>
+
+    <h2>4. Intellectual Property</h2>
+    <p>All intellectual property rights in this Application (including but not limited to software code, UI design, trademarks, graphics, text, and logos) belong to the EverEver Team. Unauthorized copying, reverse engineering, decompilation, or commercial exploitation is strictly prohibited.</p>
+
+    <h2>5. Modifications & Termination</h2>
+    <ul>
+        <li>We reserve the right to modify, suspend, or terminate any part of the Application services at any time due to business adjustments, technical upgrades, or force majeure.</li>
+        <li>You may terminate these Terms at any time simply by uninstalling the Application from your device.</li>
+    </ul>
+
+    <h2>6. Governing Law & Dispute Resolution</h2>
+    <ul>
+        <li>These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law principles.</li>
+        <li>Any dispute arising from or in connection with these Terms shall first be resolved through friendly negotiation. If negotiation fails, disputes may be submitted to a competent court of jurisdiction.</li>
+    </ul>
+
+    <h2>7. Contact Information</h2>
+    <p>If you have any questions or require support regarding these Terms, please contact us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:support@lazycat.com">support@lazycat.com</a> (Please replace with your actual support email address)</p>
+
+    <div class="footer">
+        <p>&copy; 2026 EverEver Team (LazyCat / Small Flying Elephant). All rights reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>

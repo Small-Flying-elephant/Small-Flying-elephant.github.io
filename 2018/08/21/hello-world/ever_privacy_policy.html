@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EverEver - Privacy Policy</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent-color: #10b981;
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            margin: 0;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 28px;
+            margin-bottom: 8px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 12px;
+        }
+
+        .meta-info {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 20px;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 18px;
+            background-color: var(--accent-color);
+            margin-right: 10px;
+            border-radius: 2px;
+        }
+
+        p, li {
+            font-size: 15px;
+            color: var(--text-main);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background-color: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-color);
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 13px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 16px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>EverEver - Privacy Policy</h1>
+    <div class="meta-info">
+        <p><strong>Effective Date:</strong> November 6, 2026 | <strong>Last Updated:</strong> November 6, 2026</p>
+        <p><strong>Developer / Operator:</strong> EverEver Team (LazyCat / Small Flying Elephant)</p>
+    </div>
+
+    <p>Welcome to EverEver (referred to as "this Application" or "we"). We understand the importance of your personal information and are committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, and protect your personal information, as well as your rights regarding your data.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>We adhere to the principles of legality, fairness, necessity, and integrity. We collect information solely for providing and improving personal safety check-in and emergency SOS assistance services.</p>
+
+    <h3>(1) Information You Voluntarily Provide</h3>
+    <ul>
+        <li><strong>Personal Basic Info:</strong> Your name (or nickname) and phone number. Used to identify you when sending emergency SOS notifications or emails.</li>
+        <li><strong>Emergency Contact Info:</strong> Names, phone numbers, or email addresses of family members or emergency contacts you add. Used to notify them when an SOS is triggered or a check-in times out.</li>
+        <li><strong>SMTP Email Settings:</strong> If you enable email emergency notifications, the outgoing SMTP server address, email account, and app-specific password/authorization code you configure.</li>
+    </ul>
+
+    <div class="highlight-box">
+        <strong>Important Note:</strong> Your SMTP email credentials are stored exclusively in your device's local private storage (SharedPreferences). They are used strictly on-device to send encrypted emails (via TLS/SSL) directly to your contacts and are <strong>never uploaded to any third-party or developer server</strong>.
+    </div>
+
+    <h3>(2) Sensitive System Permissions & Automatically Processed Data</h3>
+    <ul>
+        <li><strong>Location Data (ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION):</strong> When you enable "Location Sharing" and trigger an SOS alert, the App accesses your real-time geographic location (latitude & longitude) solely to generate a Google Maps link attached to the emergency email. Location is fetched only as a single one-time event upon SOS trigger; <strong>we do not perform continuous background tracking or record location history</strong>.</li>
+        <li><strong>Phone Call Permission (CALL_PHONE):</strong> If "Family Reminder" is enabled, the App can automatically initiate a phone call to your designated primary emergency contact after the SOS countdown finishes.</li>
+        <li><strong>System Alert Window Permission (SYSTEM_ALERT_WINDOW):</strong> Used to display an optional quick-access floating SOS button over other apps or the home screen for emergency access.</li>
+        <li><strong>Notification Permission (POST_NOTIFICATIONS):</strong> Used to send local notifications for daily check-in reminders and system alerts.</li>
+        <li><strong>Advertising Identifier (com.google.android.gms.permission.AD_ID):</strong> Processed by the Google Mobile Ads SDK for ad serving, fraud prevention, and compliance.</li>
+    </ul>
+
+    <h2>2. How We Use Information</h2>
+    <ul>
+        <li><strong>Core Services:</strong> Performing daily safety check-ins, calculating consecutive streak counts, and sending automated emergency emails or phone calls upon timeout or SOS trigger.</li>
+        <li><strong>Emergency Location Assistance:</strong> Attaching location map links to emergency emails to assist your contacts in locating you during an emergency.</li>
+        <li><strong>Reminders & Alerts:</strong> Delivering local push notifications for check-in reminders and safety warnings.</li>
+        <li><strong>Advertising:</strong> Rendering non-intrusive advertisements via Google AdMob to support free app operation.</li>
+    </ul>
+
+    <h2>3. Data Storage & Retention</h2>
+    <ul>
+        <li><strong>Strictly Local Storage:</strong> All user-entered names, phone numbers, emergency contacts, and SMTP credentials are <strong>stored exclusively within your device's local private storage</strong>.</li>
+        <li><strong>No Cloud Database:</strong> We do not operate a user database server and do not upload or sync your personal data to any external server.</li>
+        <li><strong>Retention Period:</strong> Your data remains stored locally on your device until you manually clear it, clear application data, or uninstall the Application. Uninstalling the App completely destroys all locally stored data.</li>
+    </ul>
+
+    <h2>4. Third-Party SDKs & Data Sharing</h2>
+    <p>To ensure app stability and ad monetization, this Application integrates the following third-party SDKs:</p>
+    <ul>
+        <li><strong>Google Mobile Ads (AdMob) & Google User Messaging Platform (UMP)</strong><br>
+            Service Provider: Google LLC<br>
+            Collected Data Types: IP address, device identifiers (Advertising ID / AD_ID), app crash logs, ad interaction data, user consent choices.<br>
+            Purpose: Ad rendering, fraud prevention, and managing user consent choices under EU GDPR and California CCPA.<br>
+            For details, please review: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> | <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ad Privacy Info</a>
+        </li>
+    </ul>
+
+    <h2>5. Prominent Disclosure & Permission Consent</h2>
+    <p>In accordance with Google Play Developer Policies, the Application presents explicit prominent disclosures in-app prior to requesting sensitive permissions (such as Location, Phone Calling, and System Overlay). Functions are enabled only after your explicit consent. You can revoke permissions at any time via Android System Settings -> Apps -> EverEver -> Permissions.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>This Application is not directed to children under the age of 13 (or the legal age under local law). We do not knowingly collect personal information from children. If you become aware that a child has provided us with personal information without parental consent, please contact us for immediate deletion.</p>
+
+    <h2>7. Your Rights & Data Control</h2>
+    <ul>
+        <li>You can view and modify your personal information and contact settings directly inside the Application at any time.</li>
+        <li>You can revoke any granted permissions anytime in your device's System Settings.</li>
+        <li>You can completely delete all your personal data by clearing application data or uninstalling the Application.</li>
+    </ul>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in legal requirements or app features. Updated versions will be published on this page with a revised effective date.</p>
+
+    <h2>9. Contact Us</h2>
+    <p>If you have any questions, comments, or requests regarding this Privacy Policy or data security, please contact us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:support@lazycat.com">support@lazycat.com</a> (Please replace with your actual support email address)</p>
+
+    <div class="footer">
+        <p>&copy; 2026 EverEver Team (LazyCat / Small Flying Elephant). All rights reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>
