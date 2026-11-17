@@ -1,1 +1,3 @@
-google.com, pub-4610846548122626, DIRECT, f08c47fec0942fa0
+# Google AdMob app-ads.txt for LazyCat Studio Apps
+# Replace pub-XXXXXXXXXXXXXXXX with your actual AdMob Publisher ID from AdMob Console (Account -> App-ads.txt)
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
